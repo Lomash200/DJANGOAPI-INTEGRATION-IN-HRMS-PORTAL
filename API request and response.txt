@@ -1,0 +1,21 @@
+PUT https://your-domain.com/api/employee/123
+Headers:
+  Content-Type: application/json
+  Authorization: Bearer <your_jwt_token>
+
+Body:
+{
+  "name": "Alice Johnson",
+  "email": "alice.johnson@example.com",
+  "departmentId": 5
+}
+
+Response:
+HTTP/1.1 200 OK
+{
+  "empId": 123,
+  "name": "Alice Johnson",
+  "email": "alice.johnson@example.com",
+  "departmentId": 5,
+  "joinDate": "2022-01-15"
+}
